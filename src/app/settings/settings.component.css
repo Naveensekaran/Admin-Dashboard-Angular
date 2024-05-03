@@ -1,0 +1,19 @@
+.content{
+    width: calc(100% - 13rem);
+    position: absolute;
+    margin-left: 14rem;
+    margin-top: 60px;
+    font-family:  sans-serif;
+}
+
+.title h1{
+    border-bottom: 1px solid rgb(197, 191, 191);
+    margin-top: 10px;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+}
+.title span{
+    color: rgb(255, 255, 255);
+    margin-right: 8px;
+    color: #049ef7;
+}

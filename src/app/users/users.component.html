@@ -1,0 +1,143 @@
+<div class="content">
+    <div class="title">
+        <h1><span class="material-icons-sharp">
+            person_outline
+        </span>{{item}}</h1>
+    </div>
+
+    <!-- <div class="table-container">
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Country</th>
+                    <th>Usage</th>
+                    <th>Payment Mehtod</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunil Kumar <br><span>Registered: jan 1,2021</span></td>
+                    <td class="country"><img src="../assets/images/india.png" alt="india"></td>
+                    <td>50%
+                        <div class="container">
+                            <div class="usage sunil"></div>
+                        </div>
+                        
+                    </td>
+                    <td class="payment"><span class="material-symbols-outlined">
+                        credit_card
+                        </span></td>
+                    <td class="activity">Last login<br><span>10 sec ago</span></td>
+                </tr>
+                <tr>
+                    <td>Suthan Raja <br><span>Registered: mar 10,2021</span></td>
+                    <td class="country"><img src="../assets/images/america.png" alt="america"></td>
+                    <td>70%
+                        <div class="container">
+                            <div class="usage suthan"></div>
+                        </div>
+                    </td>
+                    <td class="payment"><span class="material-symbols-outlined">
+                        payments
+                    </span></td>
+                    <td class="activity">Last login <br><span>1 minutes ago</span></td>
+                </tr>
+                <tr>
+                    <td>Naveen Kumar <br><span>Registered: july 30,2022</span></td>
+                    <td class="country"><img src="../assets/images/southafrica.png" alt="southafrica"></td>
+                    <td>30%
+                        <div class="container">
+                            <div class="usage naveen"></div>
+                        </div>
+                    </td>
+                    <td class="payment"><span class="material-symbols-outlined">
+                        payments
+                        </span></td>
+                    <td class="activity">Last login<br><span>3 hours ago</span></td>
+                </tr>
+                <tr>
+                    <td>Godson <br><span>Registered: apr 5,2020</span></td>
+                    <td class="country"><img src="../assets/images/bangladesh.png" alt="bangladesh"></td>
+                    <td>50%
+                        <div class="container">
+                            <div class="usage godson"></div>
+                        </div>
+                    </td>
+                    <td class="payment"><span class="material-symbols-outlined">
+                        credit_card
+                        </span></td>
+                    <td class="activity">Last login<br><span>Last week</span></td>
+                </tr>
+                <tr>
+                    <td>Santhosh <br><span>Registered: jan 7,2023</span></td>
+                    <td class="country"><img src="../assets/images/india.png" alt="india"></td>
+                    <td>45%
+                        <div class="container">
+                            <div class="usage santhosh"></div>
+                        </div>
+                    </td>
+                    <td class="payment"><span class="material-symbols-outlined">
+                        credit_card
+                        </span></td>
+                    <td class="activity">Last login<br><span>Last week</span></td>
+                </tr>
+            
+                <tr>
+                    <td>Tamizh <br><span>Registered: oct 2,2019</span></td>
+                    <td class="country"><img src="../assets/images/india.png" alt="india"></td>
+                    <td>74%
+                        <div class="container">
+                            <div class="usage tamizh"></div>
+                        </div>
+                    </td>
+                    <td class="payment"><span class="material-symbols-outlined">
+                        credit_card
+                        </span></td>
+                    <td class="activity">Last login<br><span>Last month</span></td>
+                </tr>
+                <tr>
+                    <td>Dinesh <br><span>Registered: dec 20,2021</span></td>
+                    <td class="country"><img src="../assets/images/america.png" alt="america"></td>
+                    <td>90%
+                        <div class="container">
+                            <div class="usage dinesh"></div>
+                        </div>
+                    </td>
+                    <td class="payment"><span class="material-symbols-outlined">
+                        payments
+                        </span></td>
+                    <td class="activity">Last login<br><span>Last month</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>COUNTRY</th>
+                <th>PAYMENT</th>
+                <th>MOBILE NO</th>
+                <th>REMOVE USER</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.country}}</td>
+                <td>{{user.payment}}</td>
+                <td>{{user.mobile}}</td>
+                <td><button class="btn" (click)="deleteUser(user.id)">Logout</button></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    
+</div>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="side-bar.component.css">
+  <title>Admin AdminDashboard</title>
+</head>
+<body>
+  <div class="container">
+    <app-header></app-header>
+    <main><router-outlet></router-outlet></main>
+    <!-- Sidebar Section-->
+    <aside>
+
+      <div class="toggle">
+        <div class="logo">
+          <img src="data:image/png;base64,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" alt="">
+        </div>
+
+        <div class="close" id="close-btn">
+          <span class="material-icons-sharp">
+           close
+          </span>
+        </div>
+      </div>
+
+      <div class="sidebar">
+          <a [routerLink]="['/dashboard']">
+            <span class="material-icons-sharp">
+              dashboard
+            </span>
+            <h3>Dashboard</h3>
+          </a>
+
+          <a [routerLink]="['/users']">
+            <span class="material-icons-sharp">
+              person_outline  
+            </span>
+            <h3>Users</h3>
+          </a>
+
+          <a [routerLink]="['/orders']">
+            <span class="material-icons-sharp">
+              receipt_long
+            </span>
+            <h3>Orders</h3>
+          </a>
+
+          <a [routerLink]="['/salelist']">
+            <span class="material-icons-sharp">
+              inventory
+            </span>
+            <h3>Sale list</h3>
+          </a>
+
+          <a [routerLink]="['/settings']">
+            <span class="material-icons-sharp">
+              settings
+            </span>
+            <h3>Settings</h3>
+          </a>
+
+          <a [routerLink]="['/newlogin']">
+            <span class="material-icons-sharp">
+              add
+            </span>
+            <h3>New Login</h3>
+          </a>
+
+          <a [routerLink]="['/logout']">
+            <span class="material-icons-sharp">
+              logout
+            </span>
+            <h3>Logout</h3>
+          </a>
+      </div>
+    </aside>
+  </div>
+ 
+</body>
+</html>

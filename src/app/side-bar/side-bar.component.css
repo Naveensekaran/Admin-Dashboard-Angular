@@ -1,0 +1,88 @@
+a{
+    color : rgba(0, 0, 0, 0.815);
+}
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+h3{
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+.container{
+    display: grid;
+    margin: 0;
+    gap: 1.8rem;
+    overflow-x: hidden;
+    width: 13rem;
+    background-color: #fff;
+}
+aside .toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -2rem;
+}
+aside .toggle .logo{
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 0.8rem;
+    margin-top: 0;
+}
+
+aside .toggle .close{
+    padding-right: 1rem;
+    display: none;
+}
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2rem 3rem rgba(132,139,200,0.18) ;
+    border-radius: 15px;
+    height : 88vh;
+    position: relative;
+    top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+aside .sidebar:hover{
+    box-shadow: none;
+}
+aside .sidebar a{
+    display: flex;
+    align-items: center;
+    color: #0088f7;
+    height: 3.2rem;
+    gap: 1rem;
+    position: relative;
+    margin-left: 2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 7rem;
+    width: 100%;
+}
+aside .sidebar a:hover{
+    width: 100%;
+    color : #049ef7;
+    background-color: rgba(217, 214, 230, 0.884);
+    margin-left: 0;
+}
+aside .sidebar a:hover{
+    color: rgb(107, 107, 107);
+}
+aside .sidebar a:hover span{
+    margin-left: 0.6rem;
+}
+

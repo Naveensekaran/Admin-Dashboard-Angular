@@ -1,0 +1,28 @@
+<div class="content">
+    <div class="title">
+        <h1> <span class="material-icons-sharp">
+            inventory
+        </span>{{item}}</h1>
+    </div>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>PAYMENT TYPE</th>
+                <th>LOCATION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.payment}}</td>
+                <td>{{product.location}}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>

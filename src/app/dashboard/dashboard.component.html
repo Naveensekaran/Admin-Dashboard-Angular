@@ -1,0 +1,52 @@
+<div class="content">
+    <div class="title">
+        <h1> <span class="material-icons-sharp">
+            dashboard
+        </span>{{item}}</h1>
+    </div>
+    <div class="card">
+        <div class="card-1">
+            <div class="card-title">
+                <h3>{{totalUsers}}</h3>
+            </div>
+            <div class="card-body">
+                <p>Total Users</p>
+                <div class="chart-container">
+                    <canvas  id="MyCardChart" >{{ cardchart }}</canvas>
+              </div>
+            </div>
+        </div>
+        <div class="card-2">
+            <div class="card-body">
+                <h3>India</h3> <span>{{india}}</span>
+            </div>
+            
+            <div class="card-body">
+                <h3>Others</h3> <span>{{others}}</span>
+            </div>
+        </div>
+    
+        <div class="card-3">
+            <div class="card-title">
+                <h3>70K+</h3 ><span>(-1.4%)</span>
+            </div>
+            <div class="card-body">
+                <p>Sale List</p>
+            </div>
+        </div>
+    
+        <div class="card-4">
+            <div class="card-title">
+                <h3>1K+</h3 ><span>(0.8%)</span>
+            </div>
+            <div class="card-body">
+                <p>New Login</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <canvas  id="MyChart"></canvas>
+  </div>
+ 
+</div>

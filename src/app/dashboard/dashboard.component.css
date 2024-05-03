@@ -1,0 +1,78 @@
+.content{
+    width: calc(100% - 13rem);
+    position: absolute;
+    margin-left: 13rem;
+    margin-top: 52px;
+    font-family:  sans-serif;
+    background-color: rgb(219, 220, 223);
+    height: 100%;
+}
+
+.title h1{
+    border-bottom: 1px solid rgb(197, 191, 191);
+    margin-top: 10px;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+}
+.title span{
+    color: rgb(255, 255, 255);
+    margin-right: 8px;
+    color: #049ef7;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 0;
+
+}
+.card-1{
+    width: 250px;
+    height: 170px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgb(40, 71, 92);
+    color: white;
+}
+.card-2{
+    width: 250px;
+    height: 170px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgb(204, 170, 57);
+}
+.card-3{
+    width: 250px;
+    height: 170px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgb(196, 80, 80);
+    color: white;
+}
+.card-4{
+    width: 250px;
+    height: 170px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: rgb(154, 199, 202);
+    color: black;
+}
+.card-title{
+    font-size: 25px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+.card-title span{
+    font-size: 15px;
+}
+.card-body{
+    font-size: 20px;
+}
+.chart-container{
+    width: 60%;
+    margin-top: 3.5rem;
+}

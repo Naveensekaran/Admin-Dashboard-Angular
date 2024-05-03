@@ -1,0 +1,25 @@
+<div class="content">
+    <div class="title">
+        <h1> <span class="material-icons-sharp">
+           add
+        </span>{{item}}</h1>
+    </div>
+
+    <div class="body">
+        <form (ngSubmit)="onSubmit(userForm)" #userForm="ngForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required [(ngModel)]="user.name">
+            
+            <label for="country">Country</label>
+            <input type="text" id="country"  name="country" required [(ngModel)]="user.country" >
+
+            <label for="payment">Payment</label>
+            <input type="text" id="payment"  name="payment" required [(ngModel)]="user.payment" >
+
+            <label for="mobile">Mobile</label>
+            <input type="number" id="mobile"  name="mobile" required [(ngModel)]="user.mobile" >
+
+            <button type="submit">Add User</button>
+        </form>
+    </div>
+</div>

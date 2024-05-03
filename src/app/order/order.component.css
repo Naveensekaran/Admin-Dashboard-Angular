@@ -1,0 +1,44 @@
+.content{
+    width: calc(100% - 13rem);
+    position: absolute;
+    margin-left: 13rem;
+    margin-top: 52px;
+    font-family:  sans-serif;
+    background-color: rgb(226, 217, 219);
+    height: 100%;
+}
+.title h1{
+    border-bottom: 1px solid rgb(197, 191, 191);
+    margin-top: 10px;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+}
+.title span{
+    color: rgb(255, 255, 255);
+    margin-right: 8px;
+    color: #049ef7;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+    margin-left: 2rem;
+}
+input{
+    height: 2rem;
+    border: 1px solid rgb(197, 191, 191);
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+label{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+button{
+    margin-top: 1.5rem;
+    height: 2rem;
+    border: 1px solid rgb(197, 191, 191);
+    background-color: rgb(197, 191, 191);
+    font-size: 1.1rem;
+}
